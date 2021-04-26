@@ -52,6 +52,27 @@
   background-color: black;
   color: white;
 }
+#homepage header nav a {
+  color: grey;
+}
+#homepage header nav a:hover {
+  color: white;
+}
+#homepage main .jumbotron {
+  width: 100%;
+  height: 400px;
+  background-image: url("img/bg-painter-home.jpg");
+  background-size: 100% 100%;
+}
+#homepage main .cards .card {
+  width: 30%;
+}
+#homepage main .square {
+  width: 50%;
+}
+#homepage main .lists .list {
+  width: 25%;
+}
 #homepage footer {
   background-color: black;
   color: white;

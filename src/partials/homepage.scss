@@ -22,9 +22,28 @@
   main {
     .jumbotron {
       width: 100%;
-      height: 500px;
-      background-image: url(img/bg-painter-home.jpg);
+      height: 400px;
+      background-image: url('img/bg-painter-home.jpg');
+      background-size: 100% 100%;
+
     }
+
+    .cards {
+      .card {
+        width: 30%;
+      }
+    }
+
+    .square {
+      width: 50%;
+    }
+
+    .lists {
+      .list {
+        width: 25%;
+      }
+    }
+
   }
 
   footer {

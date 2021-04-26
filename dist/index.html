@@ -1,60 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>zuingo88 - sass-painter</title>
     <script src="app.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div id="homepage">
-        <header>
-            <div class="container">
-                <div class="infos flex just_end">
-                    <ul class="flex">
-                        <li><span></span><a href="">1-877-582-6735</a></li>
-                        <li><span></span><a href="">Chat</a></li>
-                        <li><span></span><a href="">Sign in</a></li>
-                        <li><span></span><a href="">Cart</a></li>
-                        <li><select name="" id=""><option value="">English</option></select></li>
-                    </ul>
+      <header>
+        <div class="container">
+          <div class="infos flex just_end">
+            <ul class="flex">
+              <li><span></span><a href="">1-877-582-6735</a></li>
+              <li><span></span><a href="">Chat</a></li>
+              <li><span></span><a href="">Sign in</a></li>
+              <li><span></span><a href="">Cart</a></li>
+              <li>
+                <select name="" id="">
+                  <option value="">English</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+
+          <nav class="flex align_cen">
+            <div class="logo">
+              <img src="img/logo_painter.png" width="70px" alt="logo_home" />
+            </div>
+            <ul class="flex">
+              <li>Product</li>
+              <li>Brushes</li>
+              <li>Wacom Tablets</li>
+              <li>Special Offers</li>
+              <li>Free Trials</li>
+              <li>Business</li>
+              <li>Support</li>
+              <li>Learning</li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <div class="jumbotron">
+          <div class="container">
+            <div class="presentation flex_col">
+              <img src="img/painter-2021-wm-black.png" width="250px" alt="" />
+              <p>
+                The most realistic painting experience you'll find hard to
+                resist
+              </p>
+              <span>Limited-time offer</span>
+              <span
+                >Get Signature Style Brush Pack Bundle FREE (worth
+                $179.99)</span
+              >
+              <div class="jumbo_btns">
+                <button>Learn more</button>
+                <button>Download Trial</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fine jumbotron -->
+
+        <section class="cards">
+          <div class="container">
+            <h2>More painting possibilities</h2>
+            <div class="card_container flex space_bet">
+                <div class="card">
+                  <img src="img/ptr-module.jpg" width="100%" alt="" />
+                  <span>New</span>
+                  <h4>Painter Essentials 8</h4>
+                  <p>The best affordable painting software for beginners</p>
+                  <a href="">Learn more</a>
                 </div>
-
-                <nav class="flex align_cen">
-                    <div class="logo">
-                        <img src="img/logo_painter.png" alt="logo_home">
-                    </div>
-                    <ul class="flex">
-                        <li>Product</li>
-                        <li>Brushes</li>
-                        <li>Wacom Tablets</li>
-                        <li>Special Offers</li>
-                        <li>Free Trials</li>
-                        <li>Business</li>
-                        <li>Support</li>
-                        <li>Learning</li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-
-        <main>
-            <div class="jumbotron">
-                <div class="container">
-                    <div class="presentation">
-                        <img src="img/painter-2021-wm-black.png" alt="">
-                    </div>
+                <div class="card">
+                  <img src="img/particleshop-module.jpg" width="100%" alt="" />
+                  <span>New</span>
+                  <h4>ParticleShop</h4>
+                  <p>Powerful Adobe Photoshop brush plugin powered by Painter</p>
+                  <a href="">Learn more</a>
+                </div>
+                <div class="card">
+                  <img src="img/brush-pack-module.jpg" width="100%" alt="" />
+                  <span>New</span>
+                  <h4>Brush Packs</h4>
+                  <p>Diverse add-on packs to embellish photo composites, graphic designs and paintings</p>
+                  <a href="">Learn more</a>
                 </div>
             </div>
-        </main>
+          </div>
+        </section>
 
-        <footer>
-            <div class="container">
-                footer
+        <section class="puzzle">
+            <div class="container flex_wrap">
+                <div class="square">
+                    <h4>Wacom + Painter 2021</h4>
+                    <p>Satisfy all your digital painting needs with the power and precision of these award-winning bundles.</p>
+                    <button class="learn">Learn More</button>
+                </div>
+                <div class="square">
+                    <img src="img/wacom.png" width="100%" alt="">
+                </div>
+                <div class="square">
+                    <img src="img/painter-master.jpg" width="100%" alt="">
+                </div>
+                <div class="square">
+                    <h4>Painter Masters</h4>
+                    <p>Gain inspiration and knowledge from professional artists who have mastered Painter, and excel in their craft.</p>
+                    <button class="learn">Learn More</button>
+                </div>
+                <div class="square">
+                    <h4>Business & Education</h4>
+                    <p>Save money on our award-winning painting software thanks to affordable and flexible licensing options.</p>
+                    <button class="learn">Learn More</button>
+                </div>
+                <div class="square">
+                    <img src="img/business-education.jpg" width="100%" alt="">
+                </div>
             </div>
-        </footer>
+        </section>
+
+        <section class="lists">
+          <div class="container flex">
+            <div class="list">
+              <h3>Products</h3>
+              <ul>
+                <li>Corel Painter</li>
+                <li>ParticleShop</li>
+                <li>Painter Essentials</li>
+                <li>Special Offers</li>
+                <li>Free Trials</li>
+                <li>All Products</li>
+            </div>
+            <div class="list">
+              <h3>Quick Links</h3>
+              <ul>
+                <li>Licensing</li>
+                <li>Tutorials & Tips</li>
+                <li>Webinairs</li>
+                <li>The Painter Factory</li>
+                <li>Discovery Center</li>
+                <li>Beta Programs</li>
+            </div>
+            <div class="list">
+              <h3>Support</h3>
+              <ul>
+                <li>Register your products</li>
+                <li>Patches and Updates</li>
+                <li>Knowledgebase</li>
+                <li>Uninstall instructions</li>
+                <li>Contact us</li>
+            </div>
+            <div class="list">
+              <h3>About Corel</h3>
+              <ul>
+                <li>Company information</li>
+                <li>Newsroom</li>
+                <li>Careers</li>
+                <li>Partner Program</li>
+                <li>Legal information</li>
+                <li>EULA</li>
+            </div>
+          </div>
+          <div class="container">
+            <ul class="social_links flex just_end">
+              <li>Social</li>
+              <li>Social</li>
+              <li>Social</li>
+              <li>Social</li>
+              <li>Social</li>
+              <li>Social</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="container flex space_bet">
+          <div class="partners">
+            <ul class="flex">
+              <li>parner</li>
+              <li>parner</li>
+              <li>parner</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
