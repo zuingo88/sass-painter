@@ -44,13 +44,34 @@
   align-items: center;
 }
 
+#homepage {
+  background-color: #E8E8E8;
+}
 #homepage .container {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 #homepage header {
   background-color: black;
   color: white;
+}
+#homepage header .infos {
+  padding: 15px 0;
+}
+#homepage header .infos li {
+  margin-left: 20px;
+  color: white;
+  font-size: 14px;
+  opacity: 0.7;
+}
+#homepage header .infos li:hover {
+  opacity: 1;
+}
+#homepage header .infos li:last-of-type {
+  opacity: 1;
+}
+#homepage header nav .logo {
+  margin-right: 15px;
 }
 #homepage header nav a {
   color: grey;
@@ -58,30 +79,170 @@
 #homepage header nav a:hover {
   color: white;
 }
+#homepage header nav li {
+  padding: 15px 22px;
+}
+#homepage header nav li:hover {
+  color: black;
+  background-color: white;
+}
 #homepage main .jumbotron {
   width: 100%;
-  height: 400px;
+  height: 450px;
   background-image: url("img/bg-painter-home.jpg");
   background-size: 100% 100%;
 }
+#homepage main .jumbotron .presentation img {
+  margin-bottom: 25px;
+}
+#homepage main .jumbotron .presentation p {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+#homepage main .jumbotron .presentation span {
+  color: #c70cb9;
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+#homepage main .jumbotron .presentation span:first-of-type {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#homepage main .jumbotron .presentation button {
+  padding: 10px 25px;
+  color: white;
+  font-size: 25px;
+  background-color: black;
+  border: solid 2px black;
+}
+#homepage main .jumbotron .presentation button.btn_transparent {
+  margin-left: 25px;
+  color: black;
+  background-color: transparent;
+}
+#homepage main .cards h2 {
+  margin: 30px 0 20px 0;
+  font-size: 32px;
+  text-align: center;
+}
 #homepage main .cards .card {
   width: 30%;
+  background-color: white;
 }
-#homepage main .square {
+#homepage main .cards .card .card_text {
+  padding: 15px;
+}
+#homepage main .cards .card .card_text span {
+  margin-right: 5px;
+  color: #009cff;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+#homepage main .cards .card .card_text h4 {
+  display: inline-block;
+  font-size: 20px;
+}
+#homepage main .cards .card .card_text p {
+  margin: 15px 0;
+  font-size: 18px;
+}
+#homepage main .cards .card .card_text a {
+  color: #009cff;
+}
+#homepage main .cards .card .card_text a:hover {
+  text-decoration: underline;
+}
+#homepage main .puzzle {
+  margin-top: 60px;
+}
+#homepage main .puzzle .square {
   width: 50%;
+}
+#homepage main .puzzle .square h4 {
+  font-size: 38px;
+}
+#homepage main .puzzle .square p {
+  margin-top: 40px;
+  font-size: 20px;
+}
+#homepage main .puzzle .square button {
+  margin-top: 30px;
+  padding: 10px 25px;
+  color: black;
+  background-color: ivory;
+  text-transform: uppercase;
+}
+#homepage main .puzzle .square button:hover {
+  opacity: 0.6;
+}
+#homepage main .puzzle .square.written {
+  padding: 45px 30px;
+  background-color: #3c3c3c;
+  color: white;
+}
+#homepage main .puzzle .written:first-of-type {
+  background-color: #3c1567;
+}
+#homepage main .puzzle .written.blue {
+  background-color: #0072bc;
+}
+#homepage main .puzzle .square.bg {
+  background-image: url("img/wacom-painter.jpg");
+  background-size: 100% 100%;
+}
+#homepage main .lists {
+  margin-top: 60px;
 }
 #homepage main .lists .list {
   width: 25%;
 }
+#homepage main .lists .list h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#homepage main .lists .list ul li {
+  font-size: 14px;
+  line-height: 25px;
+}
+#homepage main .social_links {
+  margin-top: 30px;
+  font-size: 40px;
+}
+#homepage main .social_links li {
+  margin-left: 10px;
+}
+#homepage main .social_links li:hover {
+  color: #0072bc;
+}
 #homepage footer {
+  padding: 10px;
   background-color: black;
   color: white;
+}
+#homepage footer .partners li {
+  margin-right: 25px;
+}
+#homepage footer .credits li {
+  margin-left: 20px;
+  color: white;
+  font-size: 14px;
+  opacity: 0.7;
+}
+#homepage footer .credits li:hover {
+  opacity: 1;
+}
+#homepage footer .credits p {
+  margin-left: 20px;
+  font-size: 14px;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
 }
 
 li {

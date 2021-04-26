@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <title>zuingo88 - sass-painter</title>
     <script src="app.js"></script>
     <link rel="stylesheet" href="style.css" />
@@ -28,7 +34,7 @@
 
           <nav class="flex align_cen">
             <div class="logo">
-              <img src="img/logo_painter.png" width="70px" alt="logo_home" />
+              <img src="img/logo_painter.png" width="100px" alt="logo_home" />
             </div>
             <ul class="flex">
               <li>Product</li>
@@ -45,7 +51,8 @@
       </header>
 
       <main>
-        <div class="jumbotron">
+        <!-- jumbotron -->
+        <div class="jumbotron flex align_cen">
           <div class="container">
             <div class="presentation flex_col">
               <img src="img/painter-2021-wm-black.png" width="250px" alt="" />
@@ -60,71 +67,80 @@
               >
               <div class="jumbo_btns">
                 <button>Learn more</button>
-                <button>Download Trial</button>
+                <button class="btn_transparent">Download Trial</button>
               </div>
             </div>
           </div>
         </div>
         <!-- fine jumbotron -->
 
+        <!-- cards -->
         <section class="cards">
           <div class="container">
             <h2>More painting possibilities</h2>
             <div class="card_container flex space_bet">
                 <div class="card">
                   <img src="img/ptr-module.jpg" width="100%" alt="" />
-                  <span>New</span>
-                  <h4>Painter Essentials 8</h4>
-                  <p>The best affordable painting software for beginners</p>
-                  <a href="">Learn more</a>
+                  <div class="card_text">
+                    <span>New</span>
+                    <h4>Painter Essentials 8</h4>
+                    <p>The best affordable painting software for beginners</p>
+                    <a href="">Learn more</a>
+                  </div>
                 </div>
+
                 <div class="card">
                   <img src="img/particleshop-module.jpg" width="100%" alt="" />
-                  <span>New</span>
-                  <h4>ParticleShop</h4>
-                  <p>Powerful Adobe Photoshop brush plugin powered by Painter</p>
-                  <a href="">Learn more</a>
+                  <div class="card_text">
+                    <h4>ParticleShop</h4>
+                    <p>Powerful Adobe Photoshop brush plugin powered by Painter</p>
+                    <a href="">Learn more</a>
+                  </div>
                 </div>
+
                 <div class="card">
                   <img src="img/brush-pack-module.jpg" width="100%" alt="" />
-                  <span>New</span>
-                  <h4>Brush Packs</h4>
-                  <p>Diverse add-on packs to embellish photo composites, graphic designs and paintings</p>
-                  <a href="">Learn more</a>
+                  <div class="card_text">
+                    <h4>Brush Packs</h4>
+                    <p>Diverse add-on packs to embellish photo composites, graphic designs and paintings</p>
+                    <a href="">Learn more</a>
+                  </div>
                 </div>
             </div>
           </div>
         </section>
 
+        <!-- puzzle -->
         <section class="puzzle">
             <div class="container flex_wrap">
-                <div class="square">
+                <div class="square written">
                     <h4>Wacom + Painter 2021</h4>
                     <p>Satisfy all your digital painting needs with the power and precision of these award-winning bundles.</p>
                     <button class="learn">Learn More</button>
                 </div>
-                <div class="square">
-                    <img src="img/wacom.png" width="100%" alt="">
+                <div class="square bg">
+                    <img src="img/wacom.png" width="100%" height="100%" alt="">
                 </div>
                 <div class="square">
-                    <img src="img/painter-master.jpg" width="100%" alt="">
+                    <img src="img/painter-master.jpg" width="100%" height="100%" alt="">
                 </div>
-                <div class="square">
+                <div class="square written">
                     <h4>Painter Masters</h4>
                     <p>Gain inspiration and knowledge from professional artists who have mastered Painter, and excel in their craft.</p>
                     <button class="learn">Learn More</button>
                 </div>
-                <div class="square">
+                <div class="square written blue">
                     <h4>Business & Education</h4>
                     <p>Save money on our award-winning painting software thanks to affordable and flexible licensing options.</p>
                     <button class="learn">Learn More</button>
                 </div>
                 <div class="square">
-                    <img src="img/business-education.jpg" width="100%" alt="">
+                    <img src="img/business-education.jpg" width="100%" height="100%" alt="">
                 </div>
             </div>
         </section>
 
+        <!-- lists -->
         <section class="lists">
           <div class="container flex">
             <div class="list">
@@ -137,6 +153,7 @@
                 <li>Free Trials</li>
                 <li>All Products</li>
             </div>
+
             <div class="list">
               <h3>Quick Links</h3>
               <ul>
@@ -147,6 +164,7 @@
                 <li>Discovery Center</li>
                 <li>Beta Programs</li>
             </div>
+
             <div class="list">
               <h3>Support</h3>
               <ul>
@@ -156,6 +174,7 @@
                 <li>Uninstall instructions</li>
                 <li>Contact us</li>
             </div>
+
             <div class="list">
               <h3>About Corel</h3>
               <ul>
@@ -167,27 +186,66 @@
                 <li>EULA</li>
             </div>
           </div>
+
+          <!-- social links -->
           <div class="container">
             <ul class="social_links flex just_end">
-              <li>Social</li>
-              <li>Social</li>
-              <li>Social</li>
-              <li>Social</li>
-              <li>Social</li>
-              <li>Social</li>
+              <li>
+                <a href=""><i class="fab fa-instagram-square"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-twitter-square"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-youtube-square"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-pinterest-square"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fas fa-rss-square"></i></a>
+              </li>
             </ul>
           </div>
         </section>
       </main>
 
       <footer>
-        <div class="container flex space_bet">
+        <div class="container flex space_bet align_cen">
+
+          <!-- partners -->
           <div class="partners">
             <ul class="flex">
-              <li>parner</li>
-              <li>parner</li>
-              <li>parner</li>
+              <li>
+                <a href="">
+                  <img src="img/corelAdvantage.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="img/logo-bbb.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="img/101.png" alt="">
+                </a>
+              </li>
             </ul>
+          </div>
+
+          <!-- credits -->
+          <div class="credits flex align_cen">
+            <ul class="flex align_cen">
+              <li>Terms of Use</li>
+              <li>Privacy</li>
+              <li>Cookies</li>
+            </ul>
+
+            <p>Copyright © 2021 Corel Corporation. All rights reserved.</p>
           </div>
         </div>
       </footer>

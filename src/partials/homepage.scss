@@ -1,6 +1,8 @@
 #homepage {
+  background-color: #E8E8E8;
+
   .container {
-    width: 80%;
+    width: 90%;
     margin: auto;
   }
 
@@ -8,48 +10,223 @@
     background-color: $bg-h-f;
     color: $color-h-f;
 
-    nav {
-        a {
-            color: grey;
+    .infos {
+      padding: 15px 0;
 
-            &:hover {
-                color:  $color-h-f;
-            }
+      li {
+        @include li-h-f;
+      }
+
+      li:last-of-type {
+        opacity: 1;
+      }
+    }
+
+    nav {
+      .logo {
+        margin-right: 15px;
+      }
+
+      a {
+        color: grey;
+
+        &:hover {
+          color: $color-h-f;
         }
+      }
+
+      li {
+        padding: 15px 22px;
+
+        &:hover {
+          color: black;
+          background-color: white;
+        }
+      }
     }
   }
 
   main {
     .jumbotron {
       width: 100%;
-      height: 400px;
-      background-image: url('img/bg-painter-home.jpg');
+      height: 450px;
+      background-image: url("img/bg-painter-home.jpg");
       background-size: 100% 100%;
 
+      .presentation {
+        img {
+          margin-bottom: 25px;
+        }
+
+        p {
+          font-size: 22px;
+          margin-bottom: 30px;
+        }
+
+        span {
+          color: #c70cb9;
+          font-size: $medium-text;
+          font-style: italic;
+          margin-bottom: 20px;
+        }
+
+        span:first-of-type {
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+
+        button {
+          @include big-btn;
+        }
+
+        button.btn_transparent {
+          margin-left: 25px;
+          color: black;
+          background-color: transparent;
+        }
+
+
+      }
     }
 
     .cards {
+      h2 {
+        margin: 30px 0 20px 0;
+        font-size: 32px;
+        text-align: center;
+        
+      }
       .card {
         width: 30%;
+        background-color: white;
+
+        .card_text {
+          padding: 15px;
+
+          span {
+            margin-right: 5px;
+            color: $new;
+            font-size: $card-title;
+            font-weight: bold;
+            font-style: italic;
+          }
+
+          h4 {
+            display: inline-block;
+            font-size: $card-title;
+          }
+
+          p {
+            margin: 15px 0;
+            font-size: $medium-text;
+          }
+
+          a {
+            color: $new;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
       }
     }
 
-    .square {
+    .puzzle {
+      margin-top: 60px;
+
+      .square {
       width: 50%;
+
+        h4 {
+          font-size: 38px;
+        }
+
+        p {
+          margin-top: 40px;
+          font-size: 20px;
+        }
+
+        button {
+          @include btn;
+        }
+      }
+
+      
+      .square.written {
+        padding: 45px 30px;
+        background-color: #3c3c3c;
+        color: white;
+      }
+
+      .written:first-of-type {
+        background-color: #3c1567;
+      }
+
+      .written.blue {
+        background-color: #0072bc;
+      }
+
+      .square.bg {
+        background-image: url('img/wacom-painter.jpg');
+        background-size: 100% 100%;
+      }
     }
 
     .lists {
+      margin-top: 60px;
+
       .list {
         width: 25%;
+
+        h3 {
+          font-size: $card-title;
+          margin-bottom: 10px;
+        }
+  
+        ul li {
+          font-size: $small-text;
+          line-height: 25px;
+        }
       }
+
     }
 
+    .social_links {
+      margin-top: 30px;
+      font-size: 40px;
+
+      li {
+        margin-left: 10px;
+
+        &:hover {
+          color: #0072bc;
+        }
+      }
+    }
   }
 
   footer {
+    padding: 10px;
     background-color: $bg-h-f;
     color: $color-h-f;
+
+    .partners {
+      li {
+        margin-right: 25px;
+      }
+    }
+
+    .credits {
+        li {
+          @include li-h-f;
+        }
+
+        p {
+          margin-left: 20px;
+          font-size: $small-text;
+        }
+      }
   }
-
-
 }
