@@ -43,31 +43,3 @@
 .align_cen {
   align-items: center;
 }
-
-#homepage .container {
-  width: 80%;
-  margin: auto;
-}
-#homepage header {
-  background-color: black;
-  color: white;
-}
-#homepage footer {
-  background-color: black;
-  color: white;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
